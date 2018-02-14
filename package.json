@@ -1,0 +1,30 @@
+{
+  "name": "re-secure-random-string",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test-watch": "jest --watch --coverage",
+    "test": "jest --coverage",
+    "prepublish": "yarn run build && yarn run test"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.1",
+    "bs-platform": "^2.1.0",
+    "husky": "^0.14.3"
+  },
+  "dependencies": {
+    "secure-random-string": "^1.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn run build && yarn run test"
+    }
+  }
+}
