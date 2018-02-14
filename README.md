@@ -1,18 +1,11 @@
-# Basic Reason Template
+# Rebcrypt
 
-Hello! This project allows you to quickly get started with Reason and BuckleScript. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+This is a simple wrapper around node secure-random-string for BuckleScript and reason. Please reference the `__tests__` folder and `SecureRandomString.rei` for usage.
 
-# Build
+## Getting Started
+
+Install  using npm:
 ```
-npm run build
+npm install --save @ncthbrt/re-secure-random-string
 ```
-
-# Build + Watch
-
-```
-npm run watch
-```
-
-
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
+Then add @ncthbrt/e-secure-random-string as a dependency to bsconfig.json.
