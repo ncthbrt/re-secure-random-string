@@ -1,5 +1,6 @@
 {
   "name": "@ncthbrt/re-secure-random-string",
+  "description": "BuckleScript/ReasonML Bindings for secure-random-string",
   "version": "0.1.1",
   "scripts": {
     "build": "bsb -make-world",
@@ -9,9 +10,22 @@
     "test": "jest --coverage",
     "prepublish": "yarn run build && yarn run test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncthbrt/re-secure-random-string.git"
+  },
   "keywords": [
-    "BuckleScript"
+    "reason",
+    "bucklescript",
+    "secure",
+    "random",
+    "string",
+    "crypto"
   ],
+  "bugs": {
+    "url": "https://github.com/ncthbrt/re-secure-random-string/issues"
+  },
+  "homepage": "https://github.com/ncthbrt/re-secure-random-string#readme",
   "author": "",
   "license": "MIT",
   "devDependencies": {
