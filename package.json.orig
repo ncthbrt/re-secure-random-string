@@ -1,7 +1,11 @@
 {
   "name": "@ncthbrt/re-secure-random-string",
+<<<<<<< HEAD
+  "version": "1.0.0",
+=======
   "description": "BuckleScript/ReasonML Bindings for secure-random-string",
-  "version": "1.0.1",
+  "version": "0.1.1",
+>>>>>>> 4d7e97ddb16e448db1c9dd811065a1997d87044b
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
