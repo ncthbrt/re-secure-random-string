@@ -8,7 +8,7 @@
     "clean": "bsb -clean-world",
     "test-watch": "jest --watch --coverage",
     "test": "jest --coverage",
-    "prepublish": "yarn run build && yarn run test"
+    "prepublishOnly": "yarn run build && yarn run test"
   },
   "repository": {
     "type": "git",
