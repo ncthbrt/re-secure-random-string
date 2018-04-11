@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@glennsl/bs-jest@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@glennsl/bs-jest/-/bs-jest-0.4.1.tgz#f8bbde90adf4f7f9e397de4ca5962d0d8c58f416"
+"@glennsl/bs-jest@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@glennsl/bs-jest/-/bs-jest-0.4.2.tgz#c8bd899aca0feae5927f4778cbdeb4c46bb2eef9"
   dependencies:
     jest "^22.0.4"
 
@@ -391,9 +391,9 @@ browser-resolve@^1.11.2:
   dependencies:
     resolve "1.1.7"
 
-bs-platform@^2.1.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-2.2.1.tgz#e22b82143a43a10630d7b2040aab87648b12190c"
+bs-platform@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-2.2.3.tgz#d905ae10a5f3621e6a739041dfa0b58483a2174f"
 
 bser@^2.0.0:
   version "2.0.0"
