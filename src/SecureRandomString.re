@@ -1,7 +1,7 @@
 type srsArgs = {
   .
   "length": int,
-  "alphanumeric": Js.boolean,
+  "alphanumeric": bool,
 };
 
 [@bs.module]
@@ -13,12 +13,7 @@ external srs_ : (srsArgs, (Js.nullable(exn), string) => unit) => unit =
 let gen = (~length=32, ~alphaNumeric=false, ()) =>
   Js.Promise.make((~resolve, ~reject) =>
     try (
-      srs_(
-        {
-          "length": length,
-          "alphanumeric": Js.Boolean.to_js_boolean(alphaNumeric),
-        },
-        (err, result) =>
+      srs_({"length": length, "alphanumeric": alphaNumeric}, (err, result) =>
         switch (err |> Js.Nullable.toOption) {
         | Some(e) => reject(. e)
         | None => resolve(. result: string)
@@ -30,7 +25,4 @@ let gen = (~length=32, ~alphaNumeric=false, ()) =>
   );
 
 let genSync = (~length=32, ~alphaNumeric=false, ()) =>
-  srsSync_({
-    "length": length,
-    "alphanumeric": Js.Boolean.to_js_boolean(alphaNumeric),
-  });
+  srsSync_({"length": length, "alphanumeric": alphaNumeric});

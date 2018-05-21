@@ -1,7 +1,7 @@
 {
   "name": "@ncthbrt/re-secure-random-string",
   "description": "BuckleScript/ReasonML Bindings for secure-random-string",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.2",
-    "bs-platform": "^2.2.3",
+    "bs-platform": "^3.1.0",
     "husky": "^0.14.3"
   },
   "dependencies": {
